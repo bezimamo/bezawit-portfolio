@@ -26,11 +26,10 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-      scrolled 
-        ? 'py-4 bg-[#0F172A]/80 backdrop-blur-md shadow-2xl border-b border-[#334155]' 
+    <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${scrolled
+        ? 'py-4 bg-[#0F172A]/80 backdrop-blur-md shadow-2xl border-b border-[#334155]'
         : 'py-6 bg-transparent'
-    }`}>
+      }`}>
       <div className="container mx-auto px-6 flex justify-between items-center">
         <Link href="/" className="group flex items-center gap-2">
           <div className="w-10 h-10 bg-gradient-to-br from-[#3B82F6] to-[#14B8A6] rounded-xl flex items-center justify-center text-white font-bold text-xl shadow-lg group-hover:rotate-12 transition-transform">
@@ -48,11 +47,10 @@ export default function Navbar() {
               <Link
                 key={link.name}
                 href={link.href}
-                className={`px-5 py-2 rounded-full text-sm font-semibold transition-all duration-300 ${
-                  isActive
+                className={`px-5 py-2 rounded-full text-sm font-semibold transition-all duration-300 ${isActive
                     ? 'bg-[#3B82F6] text-white shadow-lg'
                     : 'text-[#94A3B8] hover:text-[#F8FAFC]'
-                }`}
+                  }`}
               >
                 {link.name}
               </Link>
@@ -60,7 +58,7 @@ export default function Navbar() {
           })}
         </div>
 
-        <a 
+        <a
           href="mailto:bezawitmamo27@gmail.com"
           className="px-6 py-2.5 bg-[#3B82F6] hover:bg-[#2563EB] text-white rounded-full text-sm font-bold transition-all shadow-lg hover:shadow-blue-500/20 active:scale-95"
         >

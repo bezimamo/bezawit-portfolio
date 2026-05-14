@@ -16,7 +16,7 @@ export default function HeroSection() {
             <div className="absolute -inset-4 bg-gradient-to-r from-[#3B82F6] to-[#14B8A6] rounded-[2.5rem] blur-xl opacity-20 group-hover:opacity-40 transition-all duration-700"></div>
             <div className="relative aspect-square overflow-hidden rounded-[2rem] shadow-2xl border border-[#334155] bg-[#1E293B] transform transition-all duration-700 group-hover:rotate-y-6 group-hover:scale-[1.02]">
               <Image
-                src="/profile.png"
+                src="/profile.jpg"
                 alt="Bezawit"
                 fill
                 priority

@@ -1,18 +1,18 @@
-import HeroSection from "@/components/certification/HeroSection";
+import HeroSection from "../../components/certification/HeroSection";
 
 export default function CertificationPage() {
   return (
     <div className="animate-in fade-in slide-in-from-right-4 duration-700">
       <HeroSection />
-      <section className="py-24 bg-white dark:bg-black">
+      <section className="py-24 bg-[#0F172A]">
         <div className="container mx-auto px-6 text-center">
-          <div className="inline-block p-12 bg-zinc-50 dark:bg-zinc-900 border border-dashed border-zinc-200 dark:border-zinc-800 rounded-[3rem]">
-            <h3 className="text-2xl font-bold mb-4 text-zinc-900 dark:text-white">Verify Credentials</h3>
-            <p className="text-zinc-600 dark:text-zinc-400 mb-8 max-w-lg mx-auto">
+          <div className="inline-block p-16 bg-[#1E293B] border border-dashed border-[#334155] rounded-[4rem] shadow-2xl">
+            <h3 className="text-3xl font-black mb-6 text-[#F8FAFC] uppercase tracking-tighter">Verify Credentials</h3>
+            <p className="text-lg text-[#CBD5E1] mb-12 max-w-lg mx-auto font-medium leading-relaxed">
               All certifications are verifiable through their respective platforms. 
-              Click on a certificate card above to view the digital credential.
+              My record of continuous learning is a commitment to excellence.
             </p>
-            <button className="px-8 py-3 bg-zinc-900 dark:bg-white text-white dark:text-black rounded-full font-bold hover:scale-105 transition-all">
+            <button className="px-12 py-5 bg-[#3B82F6] text-white rounded-full font-black text-xs uppercase tracking-[0.4em] hover:bg-[#2563EB] transition-all hover:scale-105 shadow-xl">
               Request Full Transcript
             </button>
           </div>
