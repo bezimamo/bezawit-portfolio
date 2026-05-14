@@ -19,6 +19,7 @@ export default function HeroSection() {
                 src="/profile.jpg"
                 alt="Bezawit"
                 fill
+                sizes="100vw, 50vw"
                 priority
                 className="object-cover transition-transform duration-1000 group-hover:scale-110"
               />
@@ -39,7 +40,7 @@ export default function HeroSection() {
                 </span>
                 Open for opportunities
               </div>
-              
+
               <h2 className="text-5xl md:text-7xl font-black text-[#F8FAFC] leading-[1.1] tracking-tighter">
                 Crafting <br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#3B82F6] via-[#60A5FA] to-[#14B8A6] animate-gradient-x">
@@ -47,7 +48,7 @@ export default function HeroSection() {
                 </span>
               </h2>
             </div>
-            
+
             <div className="space-y-6 text-xl text-[#CBD5E1] leading-relaxed font-medium">
               <p className="border-l-4 border-[#3B82F6] pl-6 py-2 bg-gradient-to-r from-[#3B82F6]/5 to-transparent rounded-r-2xl">
                 Full-stack developer with a passion for building modern, user-friendly solutions that solve real-world problems.
@@ -59,18 +60,18 @@ export default function HeroSection() {
 
             {/* Social & Contact Actions */}
             <div className="flex flex-wrap gap-4">
-              <a 
-                href="https://linkedin.com/in/bezawit-mamo-1540782aa" 
-                target="_blank" 
+              <a
+                href="https://linkedin.com/in/bezawit-mamo-1540782aa"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="px-8 py-4 bg-[#3B82F6] hover:bg-[#2563EB] text-white rounded-2xl font-bold transition-all shadow-xl shadow-blue-500/20 hover:-translate-y-1 flex items-center gap-3"
               >
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" /></svg>
                 LinkedIn
               </a>
-              <a 
-                href="https://github.com/bezimamo" 
-                target="_blank" 
+              <a
+                href="https://github.com/bezimamo"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="px-8 py-4 bg-[#1E293B] hover:bg-[#0F172A] text-[#F8FAFC] border border-[#334155] rounded-2xl font-bold transition-all shadow-xl hover:-translate-y-1 flex items-center gap-3"
               >
