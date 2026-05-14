@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/shared/Navbar";
+import Footer from "@/components/shared/Footer";
+import BackToTop from "@/components/shared/BackToTop";
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,19 +31,15 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-white dark:bg-black">
+      <body className="min-h-full flex flex-col bg-[#0F172A] text-[#F8FAFC]">
         <Navbar />
         <main className="flex-1 pt-20">
           {children}
         </main>
-        <footer className="py-12 bg-zinc-50 dark:bg-zinc-900/50 border-t border-zinc-100 dark:border-zinc-800">
-          <div className="container mx-auto px-6 text-center">
-            <p className="text-zinc-500 dark:text-zinc-400">
-              © {new Date().getFullYear()} Bezawit. All rights reserved.
-            </p>
-          </div>
-        </footer>
+        <Footer />
+        <BackToTop />
       </body>
+
     </html>
   );
 }

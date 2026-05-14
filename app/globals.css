@@ -27,6 +27,19 @@
   
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  
+  --animate-bounce-slow: bounce-slow 3s infinite;
+  --animate-gradient-x: gradient-x 5s ease infinite;
+}
+
+@keyframes bounce-slow {
+  0%, 100% { transform: translateY(-5%); animation-timing-function: cubic-bezier(0.8,0,1,1); }
+  50% { transform: none; animation-timing-function: cubic-bezier(0,0,0.2,1); }
+}
+
+@keyframes gradient-x {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
 }
 
 body {
@@ -38,7 +51,15 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Custom Scrollbar for the Dark Theme */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.rotate-y-6 {
+  transform: rotateY(6deg);
+}
+
+/* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 10px;
 }
